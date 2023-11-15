@@ -1,0 +1,22 @@
+#work-btn {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+#work-btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 0.5s;
+  z-index: -2;
+}
+
+#work-btn:hover::before {
+  background: #c4c7f4;
+  width: 100%;
+  border-radius: 11px;
+}
